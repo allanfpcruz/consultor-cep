@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+form {
+    margin: 20px;
+}
+
+.form-item {
+    margin: 0 0 20px 0;
+}
+
+label {
+    display: block;
+}
+
+.form-control {
+    margin: 5px 0 0 0;
+    height: 1.25rem;
+}
+
+#erro {
+    font-size: 0.75rem;
+    color: #f00;
+}
+
+.hide {
+    display: none;
+}

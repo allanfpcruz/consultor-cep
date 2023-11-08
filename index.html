@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Consultor de CPF</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Consultor de CPF</h1>
+        <form>
+            <div class="form-item">
+                <label for="cep">CEP</label>
+                <input type="text" class="form-control" id="cep" maxlength="9" required pattern="^\d{5}-\d{3}$" placeholder="00000-000">
+                <p id="erro" class="hide">CEP não encontrado</p>
+            </div>
+            <div class="form-item">
+                <label for="logradouro">Logradouro</label>
+                <input type="text" class="form-control" id="logradouro">
+            </div>
+            <div class="form-item">
+                <label for="bairro">Bairro</label>
+                <input type="text" class="form-control" id="bairro">
+            </div>
+            <div class="form-item">
+                <label for="localidade">Localidade</label>
+                <input type="text" class="form-control" id="localidade">
+            </div>
+            <div class="form-item">
+                <label for="uf">UF</label>
+                <input type="text" class="form-control" id="uf">
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
