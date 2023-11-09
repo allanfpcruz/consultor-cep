@@ -9,6 +9,12 @@ const showData = (results) => {
         }
     }
 }
+function removeData() {
+    const inputs = document.querySelectorAll('.form-control')
+    inputs.forEach(input => {
+        input.value = ""
+    });
+}
 cep.addEventListener("blur",(e) => {
     let newCep = cep.value.replace("-", "")
     const options = {
@@ -23,7 +29,7 @@ cep.addEventListener("blur",(e) => {
                 showData(data) 
                 if (data.erro) {
                     document.querySelector('#erro').classList.remove('hide')
-                    removeData(data)
+                    removeData()
                 } else {
                     document.querySelector('#erro').classList.add('hide')
                     
